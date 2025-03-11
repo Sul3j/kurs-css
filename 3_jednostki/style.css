@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#kwadrat {
+    width: 2in;
+    height: 2in;
+    background-color: red;
+    font-size: 12px;
+}
+
+html {
+    font-size: 20px;
+}
+
+#kwadrat p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sekcja {
+    width: 50vmin;
+    height: 50vmin;
+}
+
+#lewa {
+    background-color: red;
+}
+
+#prawa {
+    background-color: blue;
+}
+
+#kwadrat-srodek {
+    width: 50%;
+    height: 50%;
+    background-color: green;
+}
