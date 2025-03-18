@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozycjonowanie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 300vh;
+        }
+
+        .kwadrat, .maly-kwadrat {
+            width: 150px;
+            height: 150px;
+            margin-right: 10px;
+            background-color: #bbb;
+            display: inline-block;
+            text-align: center;
+            line-height: 150px;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #kwadrat1 {
+            background-color: red;
+            position: relative;
+            left: 50px;
+            top: 200px;
+        }
+
+        #kwadrat2 {
+            background-color:  blue;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        #kwadrat3 {
+            background-color: green;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+        }
+
+        #kwadrat4 {
+            background-color: blueviolet;
+            position: sticky;
+            top: 0;
+            left: 50%;
+        }
+
+        #kwadrat5 {
+            background-color: aqua;
+            position: static;
+        }
+
+        .duzy-kwadrat {
+            width: 50vw;
+            height: 600px;
+            background-color: cadetblue;
+            position: relative;
+            top: 700px;
+        }
+
+        .maly-kwadrat {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.kwadrat#kwadrat$*5 -->
+    <div class="kwadrat" id="kwadrat1">relative</div>
+    <div class="kwadrat" id="kwadrat2">absolute</div>
+    <div class="kwadrat" id="kwadrat3">fixed</div>
+    <div class="kwadrat" id="kwadrat4">sticky</div>
+    <div class="kwadrat" id="kwadrat5">static</div>
+
+    <div class="duzy-kwadrat">
+        <div class="maly-kwadrat">absolute</div>
+    </div>
+</body>
+</html>

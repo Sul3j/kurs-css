@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header, footer {
+            width: 100vw;
+            height: 20vh;
+            background-color: blue;
+        }
+
+        nav {
+            height: 60vh;
+            width: 20vw;
+            background-color: green;
+ 
+        }
+
+        article {
+            height: 60vh;
+            width: 60vw;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            clear: both;
+        }
+
+        .kwadrat {
+            width: 150px;
+            height: 150px;
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <article>
+        <div class="kwadrat"></div>
+    </article>
+    <nav></nav>
+    <footer></footer>
+</body>
+</html>

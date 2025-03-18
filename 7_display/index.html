@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #tekst {
+            background-color: red;
+            display: block;
+        }
+
+        .lista li {
+            display: inline-block;
+            background-color: cadetblue;
+            padding: 20px;
+            color: white;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .nawigacja {
+            width: 100vw;
+            height: 80px;
+            background-color: blueviolet;
+        }
+
+        .kwadrat {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nawigacja">
+        <ul class="lista">
+            <li>Usługi</li>
+            <li>O nas</li>
+            <li>Projekty</li>
+            <li>Kontakt</li>
+        </ul>
+    </div>
+
+    <span id="tekst">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, rem voluptatum. Excepturi natus optio aperiam, id earum vitae dolore modi fugiat minus possimus blanditiis cumque repudiandae adipisci quam cum deserunt.</span>
+
+    <div class="kwadrat"><div>
+
+</body>
+</html>
